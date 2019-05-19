@@ -1,13 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import { useMyHook } from 'use-scramble-text'
+import { useScrambleText } from "use-scramble-text";
 
 const App = () => {
-  const example = useMyHook()
-  return (
-    <div>
-      {example}
-    </div>
-  )
-}
-export default App
+  const example = useScrambleText(`Lorem ipsum dolor sit.`);
+  return <div>{example}</div>;
+};
+export default App;
