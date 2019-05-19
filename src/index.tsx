@@ -51,7 +51,7 @@ export const useScrambleText = (text: string) => {
         return window.clearInterval(textUpdateInterval);
       }
       setOutputText(scrambleText(text, updateIndex));
-    }, 32);
+    }, 16);
 
     return () => window.clearInterval(textUpdateInterval);
   }, [text, setOutputText, updateIndex]);
@@ -62,7 +62,7 @@ export const useScrambleText = (text: string) => {
         return window.clearInterval(updateIndexInterval);
       }
       setUpdateIndex(updateIndex + 1);
-    }, 100);
+    }, 50);
 
     return () => window.clearInterval(updateIndexInterval);
   }, [text, updateIndex, setUpdateIndex]);
