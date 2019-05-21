@@ -1,6 +1,6 @@
 # use-scramble-text
 
-> 
+>
 
 [![NPM](https://img.shields.io/npm/v/use-scramble-text.svg)](https://www.npmjs.com/package/use-scramble-text) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -13,18 +13,14 @@ npm install --save use-scramble-text
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from "react";
 
-import { useMyHook } from 'use-scramble-text'
+import { useScrambleText } from "use-scramble-text";
 
 const Example = () => {
-  const example = useMyHook()
-  return (
-    <div>
-      {example}
-    </div>
-  )
-}
+  const myScrambledText = useScrambleText("Hello, world");
+  return <div>{myScrambledText}</div>;
+};
 ```
 
 ## License
